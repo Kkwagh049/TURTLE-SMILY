@@ -1,0 +1,27 @@
+import turtle as t1
+t1.getscreen()
+t1.penup()
+t1.goto(200,200)
+t1.pendown()
+t1.fillcolor("grey")
+t1.begin_fill()
+t1.goto(-200,200)
+t1.goto(-200,-200)
+t1.goto(200,-200)
+t1.goto(200,200)
+t1.end_fill()
+txy=[(150,150,"olive"),(-25,150,"orange"),(-25,-25,"lightgreen"),(150,-25,"purple")]
+for xyc in txy:
+    x,y,c=xyc
+    t1.penup()
+    t1.goto(x,y)
+    t1.pendown()
+    t1.fillcolor(c)
+    t1.begin_fill()
+    t1.goto(x-125,y)
+    t1.goto(x-125,y-125)
+    t1.goto(x,y-125)
+    t1.goto(x,y)
+    t1.end_fill()
+t1.hideturtle()
+t1.done()
